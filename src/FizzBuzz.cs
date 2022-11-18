@@ -11,10 +11,7 @@ public class FizzBuzz : IFizzBuzz
         var fizz = new DivisorAndWord(3, "Fizz");
         var buzz = new DivisorAndWord(5, "Buzz");
 
-        if (number % fizz.Divisor == 0)
-        {
-            result += fizz.Word;
-        }
+        result += number % fizz.Divisor == 0 ? fizz.Word : "";
 
         if (number % buzz.Divisor == 0)
         {
