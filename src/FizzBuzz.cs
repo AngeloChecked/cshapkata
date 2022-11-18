@@ -9,15 +9,16 @@ public class FizzBuzz : IFizzBuzz
         string result = String.Empty;
 
         var fizz = new DivisorAndWord(3, "Fizz");
+        var buzz = new DivisorAndWord(5, "Buzz");
 
-        if (number % 3 == 0)
+        if (number % fizz.Divisor == 0)
         {
-            result += "Fizz";
+            result += fizz.Word;
         }
 
-        if (number % 5 == 0)
+        if (number % buzz.Divisor == 0)
         {
-            result += "Buzz";
+            result += buzz.Word;
         }
 
         return String.IsNullOrEmpty(result) ? number.ToString() : result;
