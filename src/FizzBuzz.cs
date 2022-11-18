@@ -3,8 +3,7 @@ namespace csharp;
 public class FizzBuzz : IFizzBuzz
 {
     public string Say(int number)
-    {
-        
+    {        
         string result = String.Empty;
 
         if (number % 3 == 0)
