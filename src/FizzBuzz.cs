@@ -14,12 +14,12 @@ public class FizzBuzz : IFizzBuzz
 
         if (number % 3 == 0)
         {
-            return "Fizz";
+            result = "Fizz";
         }
 
         if (number % 5 == 0)
         {
-            return "Buzz";
+            result = "Buzz";
         }
 
         return String.IsNullOrEmpty(result) ? number.ToString() : result;
